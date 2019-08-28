@@ -1,0 +1,24 @@
+﻿@model SWAPI.Models.People
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+
+    <form action="/Home/ResultsPeople" method="post">
+        <input type="number" name="id" placeholder="Name of Person" />
+
+        <input type="submit" value="Submit" />
+    </form>
+
+<form action="/Home/ResultsPlanet" method="post">
+
+    <input type="number" name="id" placeholder="Name of Planet" />
+    
+    <input type="submit" value="Submit" />
+
+</form>
+
+@Html.ValidationSummary()
